@@ -1,6 +1,6 @@
-## Calico for Kubernetes networking: the basics & examples
+# Calico for Kubernetes networking: the basics & examples
 
-# A quick introduction to Kubernetes networking
+## A quick introduction to Kubernetes networking
 The network is an integral part of every Kubernetes cluster. There are many in-depth articles describing the fundamentals of Kubernetes networking, such as An illustrated guide to Kubernetes Networking or An Introduction to Kubernetes Network Policies for Security People.
 
 In the context of this article, it should be noted that K8s isn’t responsible for network connectivity between containers: for this, various CNI (Container Networking Interface) plugins are used.
