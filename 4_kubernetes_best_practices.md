@@ -20,7 +20,7 @@ These recommendations cover common issues within 3 broad categories, application
 14.	Use network policies
 15.	Use a firewall
 
-Use Namespaces
+## Use Namespaces
 Namespaces in K8s are important to utilize in order to organize your objects, create logical partitions within your cluster, and for security purposes. By default, there are 3 namespaces in a K8s cluster, ```default, kube-public and kube-system```.
 
 RBAC can be used to control access to particular namespaces in order to limit the access of a group to control the blast-radius of any mistakes that might occur, for example, a group of developers may only have access to a namespace called ```dev``` , and have no access to the ```production``` namespace. The ability to limit different teams to different namespaces can be valuable to avoid duplicated work or resource conflict.
