@@ -4,7 +4,7 @@ These recommendations cover common issues within 3 broad categories, application
 
 ## Kubernetes Best Practices:
 
-1.	Use namespaces (#Use namespaces)
+1.	[Use namespaces] (#Use namespaces)
 2.	Use readiness and liveness probes
 3.	Use resource requests and limits
 4.	Deploy your Pods as part of a Deployment, DaemonSet, ReplicaSet or StatefulSet across nodes.
