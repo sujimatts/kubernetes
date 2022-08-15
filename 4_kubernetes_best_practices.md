@@ -5,20 +5,20 @@ These recommendations cover common issues within 3 broad categories, application
 ## Kubernetes Best Practices:
 
 1.	[Use namespaces](#Use-namespaces)
-2.	Use readiness and liveness probes
-3.	Use resource requests and limits
-4.	Deploy your Pods as part of a Deployment, DaemonSet, ReplicaSet or StatefulSet across nodes.
-5.	Use multiple nodes
-6.	Use Role-based access control (RBAC)
-7.	Host your Kubernetes cluster externally (use a cloud service)
-8.	Upgrade your Kubernetes version
-9.	Monitor your cluster resources and audit policy logs
-10.	Use a version control system
-11.	Use a Git-based workflow (GitOps)
-12.	Reduce the size of your containers
-13.	Organize your objects with labels
-14.	Use network policies
-15.	Use a firewall
+2.	[Use readiness and liveness probes](#Use-readiness-and-liveness-probes)
+3.	[Use resource requests and limits](#Use-resource-requests-and-limits)
+4.	[Deploy your Pods as part of a Deployment, DaemonSet, ReplicaSet or StatefulSet across nodes.](#Deploy-your-Pods-as-part-of-a-Deployment-DaemonSet-ReplicaSet-or-StatefulSet-across-nodes)
+5.	[Use multiple nodes](#Use-multiple-nodes)
+6.	[Use Role-based access control (RBAC)](#Use-Role-based-access-control)
+7.	[Host your Kubernetes cluster externally (use a cloud service)](#Host your Kubernetes cluster externally)
+8.	[Upgrade your Kubernetes version](#Upgrade your Kubernetes version)
+9.	[Monitor your cluster resources and audit policy logs](#Monitor your cluster resources and audit policy logs)
+10.	[Use a version control system](#Use a version control system)
+11.	[Use a Git-based workflow (GitOps)](#Use a Git-based workflow)
+12.	[Reduce the size of your containers](#Reduce the size of your containers)
+13.	[Organize your objects with labels](#Organize your objects with labels)
+14.	[Use network policies](#Use network policies)
+15.	[Use a firewall](#Use a firewall])
 
 ## Use Namespaces
 Namespaces in K8s are important to utilize in order to organize your objects, create logical partitions within your cluster, and for security purposes. By default, there are 3 namespaces in a K8s cluster, ```default, kube-public and kube-system```.
