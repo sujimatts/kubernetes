@@ -5,6 +5,9 @@ terraform {
       version = "1.3.3"
     }
   }
+  backend "local" {
+    path = "/var/lib/jenkins/terraform"
+  }
 }
 
 # Configure RKE provider
