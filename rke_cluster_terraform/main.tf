@@ -13,7 +13,7 @@ provider "rke" {
 }
 # Create a new RKE cluster using config yaml
 resource "rke_cluster" "cluster" {
-  delay_on_creation = 30   
+  delay_on_creation = 180   
   cluster_yaml = file("cluster.yml")
 }
 
