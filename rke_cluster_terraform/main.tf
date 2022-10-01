@@ -6,7 +6,7 @@ terraform {
     }
   }
   backend "local" {
-    path = "/var/lib/jenkins/terraform"
+    path = "/var/lib/jenkins/terraform/terraform.tfstate"
   }
 }
 
