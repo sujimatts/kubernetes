@@ -6,6 +6,7 @@ nodes:
   internal_address: ""
   role:
   - controlplane
+  - worker
   - etcd
   hostname_override: ""
   user: sujith
@@ -129,7 +130,7 @@ system_images:
   coredns: rancher/mirrored-coredns-coredns:1.9.3
   coredns_autoscaler: rancher/mirrored-cluster-proportional-autoscaler:1.8.5
   nodelocal: rancher/mirrored-k8s-dns-node-cache:1.21.1
-  kubernetes: rancher/hyperkube:v1.24.4-rancher1
+  kubernetes: rancher/hyperkube:v1.19.16-rancher2
   flannel: rancher/mirrored-coreos-flannel:v0.15.1
   flannel_cni: rancher/flannel-cni:v0.3.0-rancher6
   calico_node: rancher/mirrored-calico-node:v3.22.0
