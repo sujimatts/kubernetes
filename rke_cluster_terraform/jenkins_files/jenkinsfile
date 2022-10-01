@@ -1,0 +1,33 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Git-Clone') {
+            steps {
+                cleanWs()
+                git branch: 'main', credentialsId: 'jenkins', url: 'https://github.com/sujimatts/kubernetes.git'
+            }
+        }
+        stage('Cluster-Creation') {
+            when {
+                expression { 
+                    params.ACTION == 'apply'
+                }
+            }
+            steps {
+                sh "cd rke_cluster_terraform && terraform init && terraform plan && terraform ${ACTION} -auto-approve"
+                sh "cd rke_cluster_terraform && kubectl apply -f yaml_files/"
+            }
+        }
+        stage('Cluster-Destroy') {
+            when {
+                expression { 
+                    params.ACTION == 'destroy'
+                }
+            }
+            steps {
+                sh "cd rke_cluster_terraform && terraform init && terraform destroy -auto-approve"
+            }
+        }
+    }
+}
