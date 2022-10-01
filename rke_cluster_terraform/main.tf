@@ -18,6 +18,6 @@ resource "rke_cluster" "cluster" {
 }
 
 resource "local_sensitive_file" "kube_cluster_yaml" {
-  filename = "~/.kube/config"
+  filename = "/var/lib/jenkins/.kube/config"
   content  = "${rke_cluster.cluster.kube_config_yaml}"
 }
