@@ -1,7 +1,22 @@
 apiVersion: v1
 kind: PersistentVolume
 metadata:
-  name: mysql-pv-volume
+  name: mysql-pv-volume1
+  labels:
+    app: mysql 
+spec:
+  storageClassName: my-local-storage
+  capacity:
+    storage: 10Gi
+  accessModes:
+    - ReadWriteOnce
+  hostPath:
+    path: "/var/lib/jenkins/volume"
+--- 
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: mysql-pv-volume2
   labels:
     app: mysql 
 spec:
