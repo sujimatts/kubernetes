@@ -1,5 +1,9 @@
-Contents
+##Contents
 1. [Pre-Requsites](#Pre-Requsites)
+2. [Create Kubernetes Cluster](#Create-Kubernetes-Cluster)
+3. [Create K8s deployment files](#Create-K8s-deployment-files)
+4. [Configure Jenkins](#Configure-Jenkins)
+5. [Trigger the Pipeline](#Trigger-the-Pipeline)
 
 ## Pre-Requsites
 1. Install terraform - https://www.terraform.io/downloads 
@@ -57,7 +61,7 @@ Now setup Jenkins and create a pipeline to deploy/destroy this via a single clic
 5. Create a declarative [pipeline file](https://github.com/sujimatts/kubernetes/blob/main/rke_cluster_terraform/jenkins_files/jenkinsfile)
 6. Add Chocie parameter to the pipeline job
 
-## Run the pipeline to deploy
+## Trigger the Pipeline
 ![image](https://user-images.githubusercontent.com/40743779/193438848-64f808a7-850e-494f-a554-7a9959149e00.png)
 -----------------------------------------------------------------------------------------------------------------
 ![image](https://user-images.githubusercontent.com/40743779/193438830-a857e0d1-19b1-4d67-aeab-14ccc1d99502.png)
