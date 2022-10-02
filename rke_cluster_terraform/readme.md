@@ -56,9 +56,11 @@ Now setup Jenkins and create a pipeline to deploy/destroy this via a single clic
 6. Add Chocie parameter to the pipeline job
 
 ## Run the pipeline to deploy
-![image](https://user-images.githubusercontent.com/40743779/193438541-76bef2e9-4565-4a27-9a98-7eb0712cd5f0.png)
+![image](https://user-images.githubusercontent.com/40743779/193438848-64f808a7-850e-494f-a554-7a9959149e00.png)
+-----------------------------------------------------------------------------------------------------------------
+![image](https://user-images.githubusercontent.com/40743779/193438830-a857e0d1-19b1-4d67-aeab-14ccc1d99502.png)
 
-![image](https://user-images.githubusercontent.com/40743779/193438551-fc8229b0-e5b9-4a78-9d9c-d72305326c1a.png)
+
 
 
 
