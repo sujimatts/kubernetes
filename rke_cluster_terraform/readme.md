@@ -1,11 +1,11 @@
-##Contents
+## Contents
 1. [Pre-Requsites](#Pre-Requsites)
 2. [Create Kubernetes Cluster](#Create-Kubernetes-Cluster)
 3. [Create K8s deployment files](#Create-K8s-deployment-files)
 4. [Configure Jenkins](#Configure-Jenkins)
 5. [Trigger the Pipeline](#Trigger-the-Pipeline)
 
-## Pre-Requsites
+## 1. Pre-Requsites
 1. Install terraform - https://www.terraform.io/downloads 
   (Version used --> Terraform v1.3.1)
 2. Install Kubectl - https://kubernetes.io/docs/tasks/tools/install-kubectl-linux/
@@ -13,7 +13,7 @@
 3. Install docker - https://docs.docker.com/engine/install/ubuntu/
    (Version used --> 20.10.18,)
    
-## Create Kubernetes Cluster
+## 2. Create Kubernetes Cluster
 
 We are using [Rancher](https://www.rancher.com/products/rancher) for setting up the k8s cluster. [Rancher](https://www.rancher.com/products/rancher) is an open source software platform that enables organizations to run containers in production. 
 
@@ -44,13 +44,13 @@ kubectl cluster-info
 
 use ```terraform destroy``` to destroy the cluster
 
-## Create K8s deployment files
+## 3. Create K8s deployment files
 Refer [this](https://blog.knoldus.com/how-to-deploy-mysql-statefulset-in-kubernetes/) article to understand in detail. 
 All the yml files used are uploaded [here](https://github.com/sujimatts/kubernetes/tree/main/rke_cluster_terraform/yaml_files)
 
 You can install all these yml files by specifying the directory to kubectl. In this case ```kubectl apply -f yaml_files```
 
-## Configure Jenkins
+## 4. Configure Jenkins
 Now setup Jenkins and create a pipeline to deploy/destroy this via a single click.
 
 1. Install Jenkins by referring this [article](https://www.digitalocean.com/community/tutorials/how-to-install-jenkins-on-ubuntu-22-04)
@@ -61,7 +61,7 @@ Now setup Jenkins and create a pipeline to deploy/destroy this via a single clic
 5. Create a declarative [pipeline file](https://github.com/sujimatts/kubernetes/blob/main/rke_cluster_terraform/jenkins_files/jenkinsfile)
 6. Add Chocie parameter to the pipeline job
 
-## Trigger the Pipeline
+## 5. Trigger the Pipeline
 ![image](https://user-images.githubusercontent.com/40743779/193438848-64f808a7-850e-494f-a554-7a9959149e00.png)
 -----------------------------------------------------------------------------------------------------------------
 ![image](https://user-images.githubusercontent.com/40743779/193438830-a857e0d1-19b1-4d67-aeab-14ccc1d99502.png)
