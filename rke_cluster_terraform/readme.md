@@ -1,5 +1,5 @@
 ## Contents
-1. [Pre-Requsites](#Pre-Requsites)
+1. [Pre-Requsites](#1.-Pre-Requsites)
 2. [Create Kubernetes Cluster](#Create-Kubernetes-Cluster)
 3. [Create K8s deployment files](#Create-K8s-deployment-files)
 4. [Configure Jenkins](#Configure-Jenkins)
