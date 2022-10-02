@@ -1,6 +1,6 @@
 ## Contents
 1. [Pre-Requsites](#Pre-Requsites)
-2. [Create Kubernetes Cluster](#Create-Kubernetes-Cluster)
+2. [Create Kubernetes Cluster](#1.Create-Kubernetes-Cluster)
 3. [Create K8s deployment files](#Create-K8s-deployment-files)
 4. [Configure Jenkins](#Configure-Jenkins)
 5. [Trigger the Pipeline](#Trigger-the-Pipeline)
@@ -13,7 +13,7 @@
 3. Install docker - https://docs.docker.com/engine/install/ubuntu/
    (Version used --> 20.10.18,)
    
-## Create Kubernetes Cluster
+## 1.Create Kubernetes Cluster
 
 We are using [Rancher](https://www.rancher.com/products/rancher) for setting up the k8s cluster. [Rancher](https://www.rancher.com/products/rancher) is an open source software platform that enables organizations to run containers in production. 
 
@@ -66,7 +66,7 @@ Now setup Jenkins and create a pipeline to deploy/destroy this via a single clic
 -----------------------------------------------------------------------------------------------------------------
 ![image](https://user-images.githubusercontent.com/40743779/193438830-a857e0d1-19b1-4d67-aeab-14ccc1d99502.png)
 -----------------------------------------------------------------------------------------------------------------
-### verify 
+### Verify 
 ![image](https://user-images.githubusercontent.com/40743779/193438967-073035b7-0143-4182-85b3-f81bb4c79c8a.png)
 
 
