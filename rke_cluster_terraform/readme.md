@@ -1,11 +1,11 @@
 ## Contents
-1. [Pre-Requsites](#1.-Pre-Requsites)
+1. [Pre-Requsites](#1.Pre-Requsites)
 2. [Create Kubernetes Cluster](#Create-Kubernetes-Cluster)
 3. [Create K8s deployment files](#Create-K8s-deployment-files)
 4. [Configure Jenkins](#Configure-Jenkins)
 5. [Trigger the Pipeline](#Trigger-the-Pipeline)
 
-## 1. Pre-Requsites
+## 1.Pre-Requsites
 1. Install terraform - https://www.terraform.io/downloads 
   (Version used --> Terraform v1.3.1)
 2. Install Kubectl - https://kubernetes.io/docs/tasks/tools/install-kubectl-linux/
