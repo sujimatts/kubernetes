@@ -1,6 +1,6 @@
 ## Contents
 1. [Pre-Requsites](#Pre-Requsites)
-2. [Create Kubernetes Cluster](#1.Create-Kubernetes-Cluster)
+2. [Create Kubernetes Cluster](#1Create-Kubernetes-Cluster)
 3. [Create K8s deployment files](#Create-K8s-deployment-files)
 4. [Configure Jenkins](#Configure-Jenkins)
 5. [Trigger the Pipeline](#Trigger-the-Pipeline)
