@@ -90,3 +90,4 @@ The volume is mount to the respective ordinal pod.
 
 ```Deleting and/or scaling a StatefulSet down will not delete the volumes associated with the StatefulSet.```
 
+READ: https://zhimin-wen.medium.com/persistent-volume-claim-for-statefulset-8050e396cc51
