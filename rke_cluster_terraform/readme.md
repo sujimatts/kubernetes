@@ -69,6 +69,3 @@ Now setup Jenkins and create a pipeline to deploy/destroy this via a single clic
 ### Verify 
 ![image](https://user-images.githubusercontent.com/40743779/193438967-073035b7-0143-4182-85b3-f81bb4c79c8a.png)
 
-
-
-
