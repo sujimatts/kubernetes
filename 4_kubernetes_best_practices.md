@@ -107,6 +107,7 @@ Also recommended is to use labels to detail security requirements, including con
 ## 15.Use Network Policies
 Network policies should be employed to restrict traffic between objects in the K8s cluster. By default, all containers can talk to each other in the network, something that presents a security risk if malicious actors gain access to a container, allowing them to traverse objects in the cluster. Network policies can control traffic at the IP and port level, similar to the concept of security groups in cloud platforms to restrict access to resources. Typically, all traffic should be denied by default, then allow rules should be put in place to allow required traffic.
 
+
 ## 16. Use a Firewall
 As well as using network policies to restrict internal traffic on your K8s cluster, you should also put a firewall in front of your K8s cluster in order to restrict requests to the API server from the outside world. IP addresses should be whitelisted and open ports restricted.
 
